@@ -1,0 +1,29 @@
+{
+  "name": "doms-bot",
+  "version": "1.0.0",
+  "description": "run `yarn install` or `npm install` to add all dependencies",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cron": "^1.8.2",
+    "puppeteer": "^13.5.0",
+    "twitter-api-v2": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dom-the-dev/doms-bot-youtube.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dom-the-dev/doms-bot-youtube/issues"
+  },
+  "homepage": "https://github.com/dom-the-dev/doms-bot-youtube#readme"
+}
