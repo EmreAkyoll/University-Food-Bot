@@ -11,11 +11,11 @@ const tweet = async () => {
     }
 }
 
-//const job = new CronJob("* * * * * 1", () => {
- //   console.log('calisiyo!')
- //   tweet()
-//})
+const job = new CronJob("* 8 * * *", () => {
+    console.log('calisiyo!')
+    tweet()
+})
 
-tweet()
+//tweet()
 
-//job.start()
+job.start()
