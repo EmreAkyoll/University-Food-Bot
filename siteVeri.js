@@ -1,7 +1,7 @@
 console.log("emre")
 
 const puppeteer = require("puppeteer");
-const { trimUndefinedProperties } = require("twitter-api-v2/dist/helpers");
+//const { trimUndefinedProperties } = require("twitter-api-v2/dist/helpers");
 console.log("emre")
 let el;
 console.log("emre")
