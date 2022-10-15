@@ -46,19 +46,19 @@ async function scrapeProduct(url) {
  // }
   // //*[@id="icerik"]/div/table/tbody/tr[4]/td/table/tbody
   
-  [el] = await page.$x('//*[@id="productTitle"]'); //amazon
+ const [el] = await page.$x('//*[@id="productTitle"]'); //amazon
   
   
   const src = await el.getProperty("textContent");
   var srcTxt = await src.jsonValue();
 
-  var kcalValue = /\d+ Kcal/.exec(srcTxt)
-  srcTxt ="\n"+ srcTxt.replace(kcalValue,"")
+ // var kcalValue = /\d+ Kcal/.exec(srcTxt)
+ // srcTxt ="\n"+ srcTxt.replace(kcalValue,"")
 
-  srcTxt = srcTxt.split("\n").map(x=>"  "+x.trim()).join("\n");
+ // srcTxt = srcTxt.split("\n").map(x=>"  "+x.trim()).join("\n");
 
 
-  srcTxt += '\n'+"     "+kcalValue
+ // srcTxt += '\n'+"     "+kcalValue
 
   return srcTxt;
 }
