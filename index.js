@@ -12,7 +12,7 @@ const tweet = async () => {
     }
 }
 
-const job = new CronJob("0 6 * * 1-5", () => {
+const job = new CronJob("0 5 * * 1-5", () => {
     console.log('calisiyo!')
     tweet()
 })
